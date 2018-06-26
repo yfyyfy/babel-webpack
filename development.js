@@ -13,7 +13,7 @@ export default {
 
   output: {
     path: dist,
-//    publicPath: "/dist/",
+    publicPath: "/dist/",
     filename: 'bundle.js'
   },
 
@@ -31,7 +31,7 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: src + '/index.html',
-      filename: 'index.html'
+      filename: dist + '/index.html'
     })
   ]
 /**/
