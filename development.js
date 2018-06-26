@@ -13,6 +13,7 @@ export default {
 
   output: {
     path: dist,
+    publicPath: "/dist/",
     filename: 'bundle.js'
   },
 
@@ -39,7 +40,7 @@ export default {
   devServer: {
     contentBase: src,
     port: 8080,
-    publicPath: "http://localhost:8080/"
+    publicPath: "http://localhost:8080/dist/"
   }
 /**/
 
