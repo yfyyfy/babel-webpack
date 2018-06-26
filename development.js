@@ -13,7 +13,6 @@ export default {
 
   output: {
     path: dist,
-//    publicPath: "/dist/",
     filename: 'bundle.js'
   },
 
@@ -27,21 +26,21 @@ export default {
     ]
   },
 
-/**/
+/*
   plugins: [
     new HtmlWebpackPlugin({
       template: src + '/index.html',
       filename: 'index.html'
     })
   ]
-/**/
+*/
 
-/*
+/**/
   devServer: {
     contentBase: src,
     port: 8080,
-    publicPath: "http://localhost:8080/dist/"
+    publicPath: "http://localhost:8080/"
   }
-*/
+/**/
 
 };
